@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica9.UpdatePage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Azure">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition Width="300"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Label Text="Matricula" Grid.Column="0" Grid.Row="0"></Label>
+                <Entry x:Name="Matricula" Text="{Binding Matricula}" Grid.Column="1" Grid.Row="0" IsEnabled="False"></Entry>
+                <Label Text="Nombre"  Grid.Column="0" Grid.Row="1"></Label>
+                <Entry x:Name="Nombre" Text="{Binding Nombre}" Grid.Column="1" Grid.Row="01"></Entry>
+                <Label Text="Apellido Paterno" Grid.Column="0" Grid.Row="2"></Label>
+                <Entry x:Name="Ape_pat" Text="{Binding ApellidoPaterno}" Grid.Column="1" Grid.Row="2"></Entry>
+                <Label Text="Apellido Materno" Grid.Column="0" Grid.Row="3"></Label>
+                <Entry x:Name="Ape_mat" Text="{Binding ApellidoMaterno}" Grid.Column="1" Grid.Row="3"></Entry>
+                <Label Text="Direccion" Grid.Column="0" Grid.Row="4"></Label>
+                <Entry x:Name="Direccion" Text="{Binding Direccion}" Grid.Column="1" Grid.Row="4"></Entry>
+                <Label Text="Telefono" Grid.Column="0" Grid.Row="5"></Label>
+                <Entry x:Name="Telefono" Text="{Binding Telefono}" Grid.Column="1" Grid.Row="5" Keyboard="Numeric"></Entry>
+                <Label Text="Carrera" Grid.Column="0" Grid.Row="6"></Label>
+                <Entry x:Name="Carrera" Text="{Binding Carrera}" Grid.Column="1" Grid.Row="6"></Entry>
+                <Label Text="Semestre" Grid.Column="0" Grid.Row="7"></Label>
+                <Entry x:Name="Semestre" Text="{Binding Semestre}" Grid.Column="1" Grid.Row="7"></Entry>
+                <Label Text="Correo" Grid.Column="0" Grid.Row="8"></Label>
+                <Entry x:Name="Correo" Text="{Binding Correo}" Grid.Column="1" Grid.Row="8" Keyboard="Email"></Entry>
+                <Label Text="Github" Grid.Column="0" Grid.Row="9"></Label>
+                <Entry x:Name="Github" Text="{Binding Github}" Grid.Column="1" Grid.Row="9" Keyboard="Url"></Entry>
+                <Button x:Name="Update" Text="Actualizar" Grid.Column="0" Grid.Row="10" Clicked="Update_Clicked" HorizontalOptions="Center"/>
+                <Button x:Name="Delete" Text="Eliminar" Grid.Column="1" Grid.Row="10" Clicked="Delete_Clicked" HorizontalOptions="Center"/>
+                <Button x:Name="Recupera" Text="Recuperar" Grid.Column="1" Grid.Row="11" Clicked="Recupera_Clicked" HorizontalOptions="Center"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
